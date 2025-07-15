@@ -1,0 +1,1460 @@
+.
+├── ch02
+│   ├── chat-client
+│   │   ├── components.json
+│   │   ├── .env
+│   │   ├── .eslintignore
+│   │   ├── .eslintrc
+│   │   ├── .gitignore
+│   │   ├── index.html
+│   │   ├── index.js
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.js
+│   │   ├── .prettierignore
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   └── vite.svg
+│   │   ├── README.md
+│   │   ├── server.google.js
+│   │   ├── server.js
+│   │   ├── src
+│   │   │   ├── App.jsx
+│   │   │   ├── assets
+│   │   │   │   └── react.svg
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   ├── ChatList.jsx
+│   │   │   │   │   └── ChatMessage.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.tsx
+│   │   │   │       ├── card.tsx
+│   │   │   │       └── textarea.tsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-chat-form-submit.js
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   ├── index.css
+│   │   │   ├── layout
+│   │   │   │   ├── AppLayout.jsx
+│   │   │   │   ├── ChatLayout.jsx
+│   │   │   │   └── Container.jsx
+│   │   │   ├── lib
+│   │   │   │   ├── generateUniqueId.js
+│   │   │   │   ├── getAssistantResponse.js
+│   │   │   │   └── utils.tsx
+│   │   │   ├── main.jsx
+│   │   │   ├── pages
+│   │   │   │   └── ChatPage.jsx
+│   │   │   └── vite-env.d.ts
+│   │   ├── tailwind.config.cjs
+│   │   ├── tests
+│   │   │   ├── setup.ts
+│   │   │   └── unit
+│   │   │       └── ChatPage.test.jsx
+│   │   ├── tsconfig.json
+│   │   ├── tsconfig.node.json
+│   │   ├── vite.config.ts
+│   │   ├── vitest.config.ts
+│   │   └── vitest.unit.config.ts
+│   └── chat-client-next
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── public
+│       │   ├── next.svg
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── (chat)
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── chat-openai
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   └── layout.js
+│       │   ├── components
+│       │   │   ├── AutoScroll.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── hooks
+│       │   │   ├── use-chat-form-submit.js
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   └── lib
+│       │       ├── generateUniqueId.js
+│       │       ├── getAssistantResponse.js
+│       │       └── utils.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+├── ch03
+│   ├── chat-multimedia
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── example.mjs
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── route.js
+│   │   │   │   │   │   └── utils.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── chat-openai
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── route.js
+│   │   │   │   │   │   └── utils.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── FileUploader.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── generateUniqueId.js
+│   │   │       ├── getAssistantResponse.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-providers
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── server.mjs
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── route.js
+│   │   │   │   │   │   └── utils.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── generateUniqueId.js
+│   │   │       ├── getAssistantResponse.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-streaming
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   ├── route.js
+│   │   │   │   │   │   └── utils.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── generateUniqueId.js
+│   │   │       ├── getAssistantResponse.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   └── chat-vercel-ai
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── public
+│       │   ├── next.svg
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── (chat)
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── chat-google
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   └── layout.js
+│       │   ├── components
+│       │   │   ├── AutoScroll.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       ├── scroll-area.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── hooks
+│       │   │   ├── use-chat-form-submit.js
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   └── lib
+│       │       ├── generateUniqueId.js
+│       │       ├── getAssistantResponse.js
+│       │       └── utils.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+├── ch04
+│   ├── chat-rsc
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-rsc-stream-ui
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-rsc-structured-data
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── example.mjs
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-rsc-tool-calls
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── example.mjs
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── ui
+│   │   │   │   │   ├── button.jsx
+│   │   │   │   │   ├── card.jsx
+│   │   │   │   │   ├── dropdown-menu.jsx
+│   │   │   │   │   ├── scroll-area.jsx
+│   │   │   │   │   └── textarea.jsx
+│   │   │   │   └── Weather.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── createAIExample.js
+│   ├── example.mjs
+│   ├── incrementalUpdates.js
+│   ├── PageComponent.js
+│   └── streamComponent.js
+├── ch05
+│   ├── counting-tokens.google.mjs
+│   ├── counting-tokens.js
+│   ├── embedding-example.js
+│   ├── embeddings.google.js
+│   ├── embeddings.openai.js
+│   ├── few-shot-learning.google.js
+│   ├── few-shot-learning.openai.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── prompt-management.js
+│   └── unit-testing.js
+├── ch06
+│   ├── agents.google.js
+│   ├── agents.openai.js
+│   ├── chat-rsc-langchain
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── fewShotPrompt.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-rsc-langchain-agents
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── fewShotPrompt.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-rsc-langchain-chains
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── fewShotPrompt.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── few-shot-chain.js
+│   ├── memory.google.js
+│   ├── memory.openai.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── retrieval.google.js
+│   ├── retrieval.openai.js
+│   ├── simple-chain.google.js
+│   ├── simple-chain.openai.js
+│   └── Weather.jsx
+├── ch07
+│   ├── rag-web-app
+│   │   ├── components.json
+│   │   ├── corpus
+│   │   │   ├── 20071229X02007.pdf
+│   │   │   ├── 20071231X02009.pdf
+│   │   │   ├── 20080102X00002.pdf
+│   │   │   ├── 20080102X00005.pdf
+│   │   │   ├── 20080104X00020.pdf
+│   │   │   ├── 20080108X00029.pdf
+│   │   │   ├── 20080108X00031.pdf
+│   │   │   ├── 20080109X00035.pdf
+│   │   │   ├── 20080111X00040.pdf
+│   │   │   ├── 20080111X00041.pdf
+│   │   │   ├── 20080114X00043.pdf
+│   │   │   ├── 20080115X00053.pdf
+│   │   │   ├── 20080116X00055.pdf
+│   │   │   ├── 20080116X00061.pdf
+│   │   │   ├── 20080117X00064.pdf
+│   │   │   ├── 20080117X00072.pdf
+│   │   │   ├── 20080122X00080.pdf
+│   │   │   ├── 20080123X00097.pdf
+│   │   │   ├── 20080124X00100.pdf
+│   │   │   ├── 20080124X00101.pdf
+│   │   │   └── KG-RAG-datasets-main.zip
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── rag_index
+│   │   │   ├── args.json
+│   │   │   ├── docstore.json
+│   │   │   └── hnswlib.index
+│   │   ├── README.md
+│   │   ├── scripts
+│   │   │   ├── indexDocuments.google.js
+│   │   │   └── indexDocuments.js
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── fewShotPrompt.js
+│   │   │       ├── GroundingRag.js
+│   │   │       ├── LogPropsRag.js
+│   │   │       ├── RAG.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── summarization-examples
+│   │   ├── corpus
+│   │   │   ├── 20071229X02007.pdf
+│   │   │   ├── 20071231X02009.pdf
+│   │   │   ├── 20080102X00002.pdf
+│   │   │   ├── 20080102X00005.pdf
+│   │   │   ├── 20080104X00020.pdf
+│   │   │   ├── 20080108X00029.pdf
+│   │   │   ├── 20080108X00031.pdf
+│   │   │   ├── 20080109X00035.pdf
+│   │   │   ├── 20080111X00040.pdf
+│   │   │   ├── 20080111X00041.pdf
+│   │   │   ├── 20080114X00043.pdf
+│   │   │   ├── 20080115X00053.pdf
+│   │   │   ├── 20080116X00055.pdf
+│   │   │   ├── 20080116X00061.pdf
+│   │   │   ├── 20080117X00064.pdf
+│   │   │   ├── 20080117X00072.pdf
+│   │   │   ├── 20080122X00080.pdf
+│   │   │   ├── 20080123X00097.pdf
+│   │   │   ├── 20080124X00100.pdf
+│   │   │   ├── 20080124X00101.pdf
+│   │   │   └── KG-RAG-datasets-main.zip
+│   │   ├── docs
+│   │   │   ├── aesops-fables.pdf
+│   │   │   ├── tiny-data.docx
+│   │   │   └── tiny-data.pdf
+│   │   ├── .eslintrc.json
+│   │   ├── example.js
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── k-means-summarization.js
+│   │   ├── loadDocuments.js
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── PDFImageLoader.js
+│   │   ├── .prettierrc
+│   │   ├── rag_index
+│   │   │   ├── args.json
+│   │   │   ├── docstore.json
+│   │   │   └── hnswlib.index
+│   │   ├── rag.js
+│   │   ├── search_grounding.js
+│   │   ├── summarize.js
+│   │   ├── summarize-refine.js
+│   │   ├── tdif-summarizer.js
+│   │   ├── TokenTracker.js
+│   │   ├── tsconfig.json
+│   │   └── _vector_store_index
+│   │       ├── args.json
+│   │       ├── docstore.json
+│   │       └── hnswlib.index
+│   └── summarization-web-app
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── (chat)
+│       │   │   │   ├── actions.jsx
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   └── layout.js
+│       │   ├── components
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       ├── dropdown-menu.jsx
+│       │   │       ├── scroll-area.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── hooks
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   └── lib
+│       │       ├── fewShotPrompt.js
+│       │       └── utils.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+├── ch08
+│   ├── chat-langchain-troubleshooting
+│   │   ├── components.json
+│   │   ├── docs
+│   │   │   ├── aesops-fables.pdf
+│   │   │   ├── tiny-data.docx
+│   │   │   └── tiny-data.pdf
+│   │   ├── embeddings-error-handling.js
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── execution-error-handling.js
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── fewShotPrompt.js
+│   │   │       └── utils.js
+│   │   ├── structured-output.js
+│   │   ├── tailwind.config.js
+│   │   ├── tsconfig.json
+│   │   └── _vector_store_index
+│   │       ├── args.json
+│   │       ├── docstore.json
+│   │       └── hnswlib.index
+│   ├── chat-rendering-troubleshooting
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── Heap.20250110.124142.21989.0.001.heapprofile
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── logger.js
+│   │   │       ├── profiler.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-testing
+│   │   ├── babel.config.cjs
+│   │   ├── docs
+│   │   │   ├── aesops-fables.pdf
+│   │   │   ├── tiny-data.docx
+│   │   │   └── tiny-data.pdf
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jest.config.cjs
+│   │   ├── jsconfig.json
+│   │   ├── package.json
+│   │   ├── .prettierrc
+│   │   ├── src
+│   │   │   ├── actions.js
+│   │   │   ├── rag.js
+│   │   │   └── utils.js
+│   │   ├── __tests__
+│   │   │   ├── test-actions.js
+│   │   │   ├── test-langchain.js
+│   │   │   └── test-vercel-ai.js
+│   │   └── tsconfig.json
+│   ├── chat-vercel-troubleshooting
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── (chat)
+│   │   │   │   │   ├── actions.jsx
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   ├── page.js
+│   │   │   │   │   └── utils.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   └── layout.js
+│   │   │   ├── components
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   └── lib
+│   │   │       ├── error-tracking.js
+│   │   │       ├── logger.js
+│   │   │       ├── profiler.js
+│   │   │       └── utils.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   └── with-jest-app
+│       ├── app
+│       │   ├── actions.test.js
+│       │   ├── actions.tsx
+│       │   ├── blog
+│       │   │   └── [slug]
+│       │   │       ├── page.test.tsx
+│       │   │       └── page.tsx
+│       │   ├── counter.test.tsx
+│       │   ├── counter.tsx
+│       │   ├── layout.tsx
+│       │   ├── __mocks__
+│       │   │   └── ai-rsc.js
+│       │   ├── page.test.tsx
+│       │   ├── page.tsx
+│       │   ├── utils
+│       │   │   ├── add.test.ts
+│       │   │   └── add.ts
+│       │   └── utils.js
+│       ├── .gitignore
+│       ├── jest.config.js
+│       ├── jest.setup.js
+│       ├── package.json
+│       ├── pages
+│       │   ├── _app.tsx
+│       │   ├── home
+│       │   │   └── index.tsx
+│       │   └── index.module.css
+│       ├── public
+│       │   ├── favicon.ico
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── styles
+│       │   └── global.css
+│       ├── __tests__
+│       │   ├── index.test.tsx
+│       │   ├── __snapshots__
+│       │   │   └── snapshot.tsx.snap
+│       │   └── snapshot.tsx
+│       ├── tsconfig.json
+│       └── types.d.ts
+├── ch09
+│   ├── chat-anonymization
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── load-test.sh
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── chat-openai
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   ├── layout.js
+│   │   │   │   ├── page.jsx
+│   │   │   │   ├── sign-in
+│   │   │   │   │   └── [[...sign-in]]
+│   │   │   │   │       └── page.tsx
+│   │   │   │   └── sign-up
+│   │   │   │       └── [[...sign-up]]
+│   │   │   │           └── page.tsx
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-chat-form-submit.js
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   ├── lib
+│   │   │   │   ├── generateUniqueId.js
+│   │   │   │   ├── getAssistantResponse.js
+│   │   │   │   └── utils.js
+│   │   │   └── middleware.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-authentication
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── load-test.sh
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── package-lock.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── chat-openai
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   ├── layout.js
+│   │   │   │   ├── page.jsx
+│   │   │   │   ├── sign-in
+│   │   │   │   │   └── [[...sign-in]]
+│   │   │   │   │       └── page.jsx
+│   │   │   │   └── sign-up
+│   │   │   │       └── [[...sign-up]]
+│   │   │   │           └── page.jsx
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-chat-form-submit.js
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   ├── lib
+│   │   │   │   ├── generateUniqueId.js
+│   │   │   │   ├── getAssistantResponse.js
+│   │   │   │   └── utils.js
+│   │   │   └── middleware.js
+│   │   ├── tailwind.config.js
+│   │   └── tsconfig.json
+│   ├── chat-deployment
+│   │   ├── components.json
+│   │   ├── .env.example
+│   │   ├── .eslintrc.json
+│   │   ├── .gitignore
+│   │   ├── jsconfig.json
+│   │   ├── load-test.sh
+│   │   ├── next.config.mjs
+│   │   ├── package.json
+│   │   ├── postcss.config.mjs
+│   │   ├── .prettierrc
+│   │   ├── public
+│   │   │   ├── next.svg
+│   │   │   └── vercel.svg
+│   │   ├── README.md
+│   │   ├── src
+│   │   │   ├── app
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── chat-openai
+│   │   │   │   │   ├── api
+│   │   │   │   │   │   └── route.js
+│   │   │   │   │   ├── layout.js
+│   │   │   │   │   └── page.js
+│   │   │   │   ├── favicon.ico
+│   │   │   │   ├── index.css
+│   │   │   │   ├── layout.js
+│   │   │   │   ├── page.jsx
+│   │   │   │   ├── sign-in
+│   │   │   │   │   └── [[...sign-in]]
+│   │   │   │   │       └── page.jsx
+│   │   │   │   └── sign-up
+│   │   │   │       └── [[...sign-up]]
+│   │   │   │           └── page.jsx
+│   │   │   ├── components
+│   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── chat
+│   │   │   │   │   ├── ChatBubble.jsx
+│   │   │   │   │   ├── ChatBubbleLoading.jsx
+│   │   │   │   │   └── ChatList.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
+│   │   │   ├── hooks
+│   │   │   │   ├── use-chat-form-submit.js
+│   │   │   │   ├── use-enter-submit.js
+│   │   │   │   ├── use-focus-on-slash-press.js
+│   │   │   │   └── use-is-at-bottom.js
+│   │   │   ├── lib
+│   │   │   │   ├── generateUniqueId.js
+│   │   │   │   ├── getAssistantResponse.js
+│   │   │   │   └── utils.js
+│   │   │   └── middleware.js
+│   │   ├── tailwind.config.js
+│   │   └── yarn.lock
+│   └── chat-validation
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── load-test.sh
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── public
+│       │   ├── next.svg
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── (chat)
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── chat-openai
+│       │   │   │   ├── api
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   └── layout.js
+│       │   ├── components
+│       │   │   ├── AutoScroll.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       ├── scroll-area.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── hooks
+│       │   │   ├── use-chat-form-submit.js
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   ├── lib
+│       │   │   ├── generateUniqueId.js
+│       │   │   ├── getAssistantResponse.js
+│       │   │   └── utils.js
+│       │   └── middleware.js
+│       ├── tailwind.config.js
+│       └── tsconfig.json
+├── ch10
+│   └── interview-assistant
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── load-test.sh
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── public
+│       │   ├── next.svg
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── api
+│       │   │   │   └── tts
+│       │   │   │       └── route.js
+│       │   │   ├── chat
+│       │   │   │   ├── actions.jsx
+│       │   │   │   ├── layout.js
+│       │   │   │   ├── page.js
+│       │   │   │   ├── [sessionId]
+│       │   │   │   │   ├── feedback
+│       │   │   │   │   │   └── page.js
+│       │   │   │   │   └── page.js
+│       │   │   │   └── utils.js
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   ├── layout.js
+│       │   │   ├── page.jsx
+│       │   │   ├── sign-in
+│       │   │   │   └── [[...sign-in]]
+│       │   │   │       └── page.jsx
+│       │   │   └── sign-up
+│       │   │       └── [[...sign-up]]
+│       │   │           └── page.jsx
+│       │   ├── components
+│       │   │   ├── AutoScroll.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   ├── ChatList.jsx
+│       │   │   │   └── ChatThread.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── InterviewSidebar.jsx
+│       │   │   ├── Markdown.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       ├── input.jsx
+│       │   │       ├── label.jsx
+│       │   │       ├── scroll-area.jsx
+│       │   │       ├── switch.jsx
+│       │   │       ├── tabs.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── features
+│       │   │   └── text-to-speach.js
+│       │   ├── hooks
+│       │   │   ├── use-chat-form-submit.js
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   ├── lib
+│       │   │   ├── strip-markdown.js
+│       │   │   └── utils.js
+│       │   └── middleware.js
+│       └── tailwind.config.js
+├── ch11
+│   └── rag
+│       ├── components.json
+│       ├── .env.example
+│       ├── .eslintrc.json
+│       ├── .gitignore
+│       ├── jsconfig.json
+│       ├── load-test.sh
+│       ├── next.config.mjs
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── postcss.config.mjs
+│       ├── .prettierrc
+│       ├── public
+│       │   ├── next.svg
+│       │   └── vercel.svg
+│       ├── README.md
+│       ├── src
+│       │   ├── app
+│       │   │   ├── api
+│       │   │   │   ├── knowledgebase
+│       │   │   │   │   ├── [knowledgebaseId]
+│       │   │   │   │   │   ├── document
+│       │   │   │   │   │   │   └── [id]
+│       │   │   │   │   │   │       └── route.js
+│       │   │   │   │   │   └── route.js
+│       │   │   │   │   └── route.js
+│       │   │   │   ├── route.js
+│       │   │   │   └── upload
+│       │   │   │       └── route.js
+│       │   │   ├── chat
+│       │   │   │   ├── actions.jsx
+│       │   │   │   ├── [knowledgebaseId]
+│       │   │   │   │   └── page.jsx
+│       │   │   │   ├── layout.js
+│       │   │   │   └── page.js
+│       │   │   ├── dashboard
+│       │   │   │   └── page.jsx
+│       │   │   ├── favicon.ico
+│       │   │   ├── index.css
+│       │   │   ├── knowledgebase
+│       │   │   │   ├── [id]
+│       │   │   │   │   ├── ChatButton.jsx
+│       │   │   │   │   ├── DeleteButton.jsx
+│       │   │   │   │   ├── DocumentList.jsx
+│       │   │   │   │   ├── page.jsx
+│       │   │   │   │   └── upload
+│       │   │   │   │       └── page.jsx
+│       │   │   │   ├── new
+│       │   │   │   │   └── page.jsx
+│       │   │   │   └── page.jsx
+│       │   │   ├── layout.js
+│       │   │   ├── page.jsx
+│       │   │   ├── sign-in
+│       │   │   │   └── [[...sign-in]]
+│       │   │   │       └── page.jsx
+│       │   │   └── sign-up
+│       │   │       └── [[...sign-up]]
+│       │   │           └── page.jsx
+│       │   ├── components
+│       │   │   ├── AutoScroll.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
+│       │   │   ├── DocumentUploader.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
+│       │   │   ├── Sidebar.jsx
+│       │   │   └── ui
+│       │   │       ├── button.jsx
+│       │   │       ├── card.jsx
+│       │   │       ├── scroll-area.jsx
+│       │   │       └── textarea.jsx
+│       │   ├── hooks
+│       │   │   ├── use-chat-form-submit.js
+│       │   │   ├── use-enter-submit.js
+│       │   │   ├── use-focus-on-slash-press.js
+│       │   │   └── use-is-at-bottom.js
+│       │   ├── lib
+│       │   │   ├── database.js
+│       │   │   ├── documentProcessing.js
+│       │   │   ├── generateUniqueId.js
+│       │   │   ├── getAssistantResponse.js
+│       │   │   └── utils.js
+│       │   └── middleware.js
+│       ├── tailwind.config.js
+│       ├── test.mjs
+│       └── tsconfig.json
+├── .gitignore
+├── LICENSE
+├── .nvmrc
+├── output.png
+├── package.json
+├── package-lock.json
+├── project-structure.txt
+├── README.md
+├── Summary
+│   ├── all-files-content.txt
+│   └── ch02.txt
+└── .vscode
+    └── launch.json
+
+329 directories, 1128 files
