@@ -1,21 +1,17 @@
 .
+├── LICENSE
+├── README.md
 ├── ch02
 │   ├── chat-client
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env
-│   │   ├── .eslintignore
-│   │   ├── .eslintrc
-│   │   ├── .gitignore
 │   │   ├── index.html
 │   │   ├── index.js
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.js
-│   │   ├── .prettierignore
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   └── vite.svg
-│   │   ├── README.md
 │   │   ├── server.google.js
 │   │   ├── server.js
 │   │   ├── src
@@ -24,12 +20,12 @@
 │   │   │   │   └── react.svg
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   ├── ChatList.jsx
 │   │   │   │   │   └── ChatMessage.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.tsx
 │   │   │   │       ├── card.tsx
@@ -63,19 +59,15 @@
 │   │   ├── vitest.config.ts
 │   │   └── vitest.unit.config.ts
 │   └── chat-client-next
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── next.config.mjs
 │       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
 │       ├── public
 │       │   ├── next.svg
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── (chat)
@@ -93,12 +85,12 @@
 │       │   │   └── layout.js
 │       │   ├── components
 │       │   │   ├── AutoScroll.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
 │       │   │   ├── chat
 │       │   │   │   ├── ChatBubble.jsx
 │       │   │   │   ├── ChatBubbleLoading.jsx
 │       │   │   │   └── ChatList.jsx
-│       │   │   ├── Footer.jsx
-│       │   │   ├── Navbar.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -116,21 +108,17 @@
 │       └── tsconfig.json
 ├── ch03
 │   ├── chat-multimedia
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
 │   │   ├── example.mjs
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -150,13 +138,13 @@
 │   │   │   │   └── layout.js
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── FileUploader.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── FileUploader.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -173,20 +161,16 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-providers
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── server.mjs
 │   │   ├── src
 │   │   │   ├── app
@@ -201,12 +185,12 @@
 │   │   │   │   └── layout.js
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -224,20 +208,16 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-streaming
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -251,12 +231,12 @@
 │   │   │   │   └── layout.js
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -274,20 +254,16 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   └── chat-vercel-ai
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── next.config.mjs
-│       ├── package.json
 │       ├── package-lock.json
+│       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
 │       ├── public
 │       │   ├── next.svg
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── (chat)
@@ -305,12 +281,12 @@
 │       │   │   └── layout.js
 │       │   ├── components
 │       │   │   ├── AutoScroll.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
 │       │   │   ├── chat
 │       │   │   │   ├── ChatBubble.jsx
 │       │   │   │   ├── ChatBubbleLoading.jsx
 │       │   │   │   └── ChatList.jsx
-│       │   │   ├── Footer.jsx
-│       │   │   ├── Navbar.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -328,17 +304,14 @@
 │       ├── tailwind.config.js
 │       └── tsconfig.json
 ├── ch04
+│   ├── PageComponent.js
 │   ├── chat-rsc
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -350,12 +323,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -371,16 +344,12 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-rsc-stream-ui
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -392,12 +361,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -413,17 +382,13 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-rsc-structured-data
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
 │   │   ├── example.mjs
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -435,12 +400,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -456,17 +421,13 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-rsc-tool-calls
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
 │   │   ├── example.mjs
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -478,19 +439,19 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   ├── Weather.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
-│   │   │   │   ├── ui
-│   │   │   │   │   ├── button.jsx
-│   │   │   │   │   ├── card.jsx
-│   │   │   │   │   ├── dropdown-menu.jsx
-│   │   │   │   │   ├── scroll-area.jsx
-│   │   │   │   │   └── textarea.jsx
-│   │   │   │   └── Weather.jsx
+│   │   │   │   └── ui
+│   │   │   │       ├── button.jsx
+│   │   │   │       ├── card.jsx
+│   │   │   │       ├── dropdown-menu.jsx
+│   │   │   │       ├── scroll-area.jsx
+│   │   │   │       └── textarea.jsx
 │   │   │   ├── hooks
 │   │   │   │   ├── use-enter-submit.js
 │   │   │   │   ├── use-focus-on-slash-press.js
@@ -502,7 +463,6 @@
 │   ├── createAIExample.js
 │   ├── example.mjs
 │   ├── incrementalUpdates.js
-│   ├── PageComponent.js
 │   └── streamComponent.js
 ├── ch05
 │   ├── counting-tokens.google.mjs
@@ -512,24 +472,21 @@
 │   ├── embeddings.openai.js
 │   ├── few-shot-learning.google.js
 │   ├── few-shot-learning.openai.js
-│   ├── package.json
 │   ├── package-lock.json
+│   ├── package.json
 │   ├── prompt-management.js
 │   └── unit-testing.js
 ├── ch06
+│   ├── Weather.jsx
 │   ├── agents.google.js
 │   ├── agents.openai.js
 │   ├── chat-rsc-langchain
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -541,12 +498,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -563,16 +520,12 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-rsc-langchain-agents
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -584,12 +537,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -606,16 +559,12 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-rsc-langchain-chains
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -626,12 +575,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -650,15 +599,15 @@
 │   ├── few-shot-chain.js
 │   ├── memory.google.js
 │   ├── memory.openai.js
-│   ├── package.json
 │   ├── package-lock.json
+│   ├── package.json
 │   ├── retrieval.google.js
 │   ├── retrieval.openai.js
 │   ├── simple-chain.google.js
-│   ├── simple-chain.openai.js
-│   └── Weather.jsx
+│   └── simple-chain.openai.js
 ├── ch07
 │   ├── rag-web-app
+│   │   ├── README.md
 │   │   ├── components.json
 │   │   ├── corpus
 │   │   │   ├── 20071229X02007.pdf
@@ -682,20 +631,15 @@
 │   │   │   ├── 20080124X00100.pdf
 │   │   │   ├── 20080124X00101.pdf
 │   │   │   └── KG-RAG-datasets-main.zip
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── rag_index
 │   │   │   ├── args.json
 │   │   │   ├── docstore.json
 │   │   │   └── hnswlib.index
-│   │   ├── README.md
 │   │   ├── scripts
 │   │   │   ├── indexDocuments.google.js
 │   │   │   └── indexDocuments.js
@@ -709,12 +653,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -726,14 +670,20 @@
 │   │   │   │   ├── use-focus-on-slash-press.js
 │   │   │   │   └── use-is-at-bottom.js
 │   │   │   └── lib
-│   │   │       ├── fewShotPrompt.js
 │   │   │       ├── GroundingRag.js
 │   │   │       ├── LogPropsRag.js
 │   │   │       ├── RAG.js
+│   │   │       ├── fewShotPrompt.js
 │   │   │       └── utils.js
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── summarization-examples
+│   │   ├── PDFImageLoader.js
+│   │   ├── TokenTracker.js
+│   │   ├── _vector_store_index
+│   │   │   ├── args.json
+│   │   │   ├── docstore.json
+│   │   │   └── hnswlib.index
 │   │   ├── corpus
 │   │   │   ├── 20071229X02007.pdf
 │   │   │   ├── 20071231X02009.pdf
@@ -760,43 +710,30 @@
 │   │   │   ├── aesops-fables.pdf
 │   │   │   ├── tiny-data.docx
 │   │   │   └── tiny-data.pdf
-│   │   ├── .eslintrc.json
 │   │   ├── example.js
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── k-means-summarization.js
 │   │   ├── loadDocuments.js
-│   │   ├── package.json
 │   │   ├── package-lock.json
-│   │   ├── PDFImageLoader.js
-│   │   ├── .prettierrc
+│   │   ├── package.json
+│   │   ├── rag.js
 │   │   ├── rag_index
 │   │   │   ├── args.json
 │   │   │   ├── docstore.json
 │   │   │   └── hnswlib.index
-│   │   ├── rag.js
 │   │   ├── search_grounding.js
-│   │   ├── summarize.js
 │   │   ├── summarize-refine.js
+│   │   ├── summarize.js
 │   │   ├── tdif-summarizer.js
-│   │   ├── TokenTracker.js
-│   │   ├── tsconfig.json
-│   │   └── _vector_store_index
-│   │       ├── args.json
-│   │       ├── docstore.json
-│   │       └── hnswlib.index
+│   │   └── tsconfig.json
 │   └── summarization-web-app
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── next.config.mjs
-│       ├── package.json
 │       ├── package-lock.json
+│       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── (chat)
@@ -807,12 +744,12 @@
 │       │   │   ├── index.css
 │       │   │   └── layout.js
 │       │   ├── components
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
 │       │   │   ├── chat
 │       │   │   │   ├── ChatBubble.jsx
 │       │   │   │   ├── ChatBubbleLoading.jsx
 │       │   │   │   └── ChatList.jsx
-│       │   │   ├── Footer.jsx
-│       │   │   ├── Navbar.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -830,22 +767,22 @@
 │       └── tsconfig.json
 ├── ch08
 │   ├── chat-langchain-troubleshooting
+│   │   ├── README.md
+│   │   ├── _vector_store_index
+│   │   │   ├── args.json
+│   │   │   ├── docstore.json
+│   │   │   └── hnswlib.index
 │   │   ├── components.json
 │   │   ├── docs
 │   │   │   ├── aesops-fables.pdf
 │   │   │   ├── tiny-data.docx
 │   │   │   └── tiny-data.pdf
 │   │   ├── embeddings-error-handling.js
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
 │   │   ├── execution-error-handling.js
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -857,12 +794,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -878,24 +815,16 @@
 │   │   │       └── utils.js
 │   │   ├── structured-output.js
 │   │   ├── tailwind.config.js
-│   │   ├── tsconfig.json
-│   │   └── _vector_store_index
-│   │       ├── args.json
-│   │       ├── docstore.json
-│   │       └── hnswlib.index
+│   │   └── tsconfig.json
 │   ├── chat-rendering-troubleshooting
-│   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── Heap.20250110.124142.21989.0.001.heapprofile
+│   │   ├── README.md
+│   │   ├── components.json
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -907,12 +836,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -930,38 +859,31 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-testing
+│   │   ├── __tests__
+│   │   │   ├── test-actions.js
+│   │   │   ├── test-langchain.js
+│   │   │   └── test-vercel-ai.js
 │   │   ├── babel.config.cjs
 │   │   ├── docs
 │   │   │   ├── aesops-fables.pdf
 │   │   │   ├── tiny-data.docx
 │   │   │   └── tiny-data.pdf
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jest.config.cjs
 │   │   ├── jsconfig.json
 │   │   ├── package.json
-│   │   ├── .prettierrc
 │   │   ├── src
 │   │   │   ├── actions.js
 │   │   │   ├── rag.js
 │   │   │   └── utils.js
-│   │   ├── __tests__
-│   │   │   ├── test-actions.js
-│   │   │   ├── test-langchain.js
-│   │   │   └── test-vercel-ai.js
 │   │   └── tsconfig.json
 │   ├── chat-vercel-troubleshooting
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── (chat)
@@ -973,12 +895,12 @@
 │   │   │   │   ├── index.css
 │   │   │   │   └── layout.js
 │   │   │   ├── components
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -997,7 +919,15 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   └── with-jest-app
+│       ├── README.md
+│       ├── __tests__
+│       │   ├── __snapshots__
+│       │   │   └── snapshot.tsx.snap
+│       │   ├── index.test.tsx
+│       │   └── snapshot.tsx
 │       ├── app
+│       │   ├── __mocks__
+│       │   │   └── ai-rsc.js
 │       │   ├── actions.test.js
 │       │   ├── actions.tsx
 │       │   ├── blog
@@ -1007,15 +937,12 @@
 │       │   ├── counter.test.tsx
 │       │   ├── counter.tsx
 │       │   ├── layout.tsx
-│       │   ├── __mocks__
-│       │   │   └── ai-rsc.js
 │       │   ├── page.test.tsx
 │       │   ├── page.tsx
 │       │   ├── utils
 │       │   │   ├── add.test.ts
 │       │   │   └── add.ts
 │       │   └── utils.js
-│       ├── .gitignore
 │       ├── jest.config.js
 │       ├── jest.setup.js
 │       ├── package.json
@@ -1027,32 +954,22 @@
 │       ├── public
 │       │   ├── favicon.ico
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── styles
 │       │   └── global.css
-│       ├── __tests__
-│       │   ├── index.test.tsx
-│       │   ├── __snapshots__
-│       │   │   └── snapshot.tsx.snap
-│       │   └── snapshot.tsx
 │       ├── tsconfig.json
 │       └── types.d.ts
 ├── ch09
 │   ├── chat-anonymization
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── load-test.sh
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── chat
@@ -1077,12 +994,12 @@
 │   │   │   │           └── page.tsx
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -1101,21 +1018,17 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-authentication
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── load-test.sh
 │   │   ├── next.config.mjs
-│   │   ├── package.json
 │   │   ├── package-lock.json
+│   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── chat
@@ -1140,12 +1053,12 @@
 │   │   │   │           └── page.jsx
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -1164,20 +1077,16 @@
 │   │   ├── tailwind.config.js
 │   │   └── tsconfig.json
 │   ├── chat-deployment
+│   │   ├── README.md
 │   │   ├── components.json
-│   │   ├── .env.example
-│   │   ├── .eslintrc.json
-│   │   ├── .gitignore
 │   │   ├── jsconfig.json
 │   │   ├── load-test.sh
 │   │   ├── next.config.mjs
 │   │   ├── package.json
 │   │   ├── postcss.config.mjs
-│   │   ├── .prettierrc
 │   │   ├── public
 │   │   │   ├── next.svg
 │   │   │   └── vercel.svg
-│   │   ├── README.md
 │   │   ├── src
 │   │   │   ├── app
 │   │   │   │   ├── chat
@@ -1202,12 +1111,12 @@
 │   │   │   │           └── page.jsx
 │   │   │   ├── components
 │   │   │   │   ├── AutoScroll.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
 │   │   │   │   ├── chat
 │   │   │   │   │   ├── ChatBubble.jsx
 │   │   │   │   │   ├── ChatBubbleLoading.jsx
 │   │   │   │   │   └── ChatList.jsx
-│   │   │   │   ├── Footer.jsx
-│   │   │   │   ├── Navbar.jsx
 │   │   │   │   └── ui
 │   │   │   │       ├── button.jsx
 │   │   │   │       ├── card.jsx
@@ -1226,21 +1135,17 @@
 │   │   ├── tailwind.config.js
 │   │   └── yarn.lock
 │   └── chat-validation
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── load-test.sh
 │       ├── next.config.mjs
-│       ├── package.json
 │       ├── package-lock.json
+│       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
 │       ├── public
 │       │   ├── next.svg
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── (chat)
@@ -1258,12 +1163,12 @@
 │       │   │   └── layout.js
 │       │   ├── components
 │       │   │   ├── AutoScroll.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── Navbar.jsx
 │       │   │   ├── chat
 │       │   │   │   ├── ChatBubble.jsx
 │       │   │   │   ├── ChatBubbleLoading.jsx
 │       │   │   │   └── ChatList.jsx
-│       │   │   ├── Footer.jsx
-│       │   │   ├── Navbar.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -1283,34 +1188,30 @@
 │       └── tsconfig.json
 ├── ch10
 │   └── interview-assistant
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── load-test.sh
 │       ├── next.config.mjs
-│       ├── package.json
 │       ├── package-lock.json
+│       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
 │       ├── public
 │       │   ├── next.svg
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── api
 │       │   │   │   └── tts
 │       │   │   │       └── route.js
 │       │   │   ├── chat
-│       │   │   │   ├── actions.jsx
-│       │   │   │   ├── layout.js
-│       │   │   │   ├── page.js
 │       │   │   │   ├── [sessionId]
 │       │   │   │   │   ├── feedback
 │       │   │   │   │   │   └── page.js
 │       │   │   │   │   └── page.js
+│       │   │   │   ├── actions.jsx
+│       │   │   │   ├── layout.js
+│       │   │   │   ├── page.js
 │       │   │   │   └── utils.js
 │       │   │   ├── favicon.ico
 │       │   │   ├── index.css
@@ -1324,15 +1225,15 @@
 │       │   │           └── page.jsx
 │       │   ├── components
 │       │   │   ├── AutoScroll.jsx
+│       │   │   ├── Footer.jsx
+│       │   │   ├── InterviewSidebar.jsx
+│       │   │   ├── Markdown.jsx
+│       │   │   ├── Navbar.jsx
 │       │   │   ├── chat
 │       │   │   │   ├── ChatBubble.jsx
 │       │   │   │   ├── ChatBubbleLoading.jsx
 │       │   │   │   ├── ChatList.jsx
 │       │   │   │   └── ChatThread.jsx
-│       │   │   ├── Footer.jsx
-│       │   │   ├── InterviewSidebar.jsx
-│       │   │   ├── Markdown.jsx
-│       │   │   ├── Navbar.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -1356,21 +1257,17 @@
 │       └── tailwind.config.js
 ├── ch11
 │   └── rag
+│       ├── README.md
 │       ├── components.json
-│       ├── .env.example
-│       ├── .eslintrc.json
-│       ├── .gitignore
 │       ├── jsconfig.json
 │       ├── load-test.sh
 │       ├── next.config.mjs
-│       ├── package.json
 │       ├── package-lock.json
+│       ├── package.json
 │       ├── postcss.config.mjs
-│       ├── .prettierrc
 │       ├── public
 │       │   ├── next.svg
 │       │   └── vercel.svg
-│       ├── README.md
 │       ├── src
 │       │   ├── app
 │       │   │   ├── api
@@ -1385,9 +1282,9 @@
 │       │   │   │   └── upload
 │       │   │   │       └── route.js
 │       │   │   ├── chat
-│       │   │   │   ├── actions.jsx
 │       │   │   │   ├── [knowledgebaseId]
 │       │   │   │   │   └── page.jsx
+│       │   │   │   ├── actions.jsx
 │       │   │   │   ├── layout.js
 │       │   │   │   └── page.js
 │       │   │   ├── dashboard
@@ -1415,14 +1312,14 @@
 │       │   │           └── page.jsx
 │       │   ├── components
 │       │   │   ├── AutoScroll.jsx
-│       │   │   ├── chat
-│       │   │   │   ├── ChatBubble.jsx
-│       │   │   │   ├── ChatBubbleLoading.jsx
-│       │   │   │   └── ChatList.jsx
 │       │   │   ├── DocumentUploader.jsx
 │       │   │   ├── Footer.jsx
 │       │   │   ├── Navbar.jsx
 │       │   │   ├── Sidebar.jsx
+│       │   │   ├── chat
+│       │   │   │   ├── ChatBubble.jsx
+│       │   │   │   ├── ChatBubbleLoading.jsx
+│       │   │   │   └── ChatList.jsx
 │       │   │   └── ui
 │       │   │       ├── button.jsx
 │       │   │       ├── card.jsx
@@ -1443,18 +1340,10 @@
 │       ├── tailwind.config.js
 │       ├── test.mjs
 │       └── tsconfig.json
-├── .gitignore
-├── LICENSE
-├── .nvmrc
 ├── output.png
-├── package.json
 ├── package-lock.json
+├── package.json
 ├── project-structure.txt
-├── README.md
-├── Summary
-│   └── ch02.txt
-├── tree-output.txt
-└── .vscode
-    └── launch.json
+└── tree-output.txt
 
-329 directories, 1128 files
+328 directories, 1019 files
